@@ -27,10 +27,10 @@ if (window.celo) {
   window.celo.autoRefreshOnNetworkChange = false
 }
 
-const client = new ApolloClient({
-  uri: 'https://api.thegraph.com/subgraphs/name/ubeswap/ubeswap',
-  cache: new InMemoryCache(),
-})
+// const client = new ApolloClient({
+//   uri: 'https://api.thegraph.com/subgraphs/name/ubeswap/ubeswap',
+//   cache: new InMemoryCache(),
+// })
 
 const GOOGLE_ANALYTICS_IDS = {
   production: {
@@ -144,7 +144,7 @@ ReactDOM.render(
       }}
     >
       <Provider store={store}>
-        <ApolloProvider client={client}>
+        {/* <ApolloProvider client={client}> */}
           <Updaters />
           <ThemeProvider>
             <ThemedGlobalStyle />
@@ -152,7 +152,7 @@ ReactDOM.render(
               <App />
             </HashRouter>
           </ThemeProvider>
-        </ApolloProvider>
+        {/* </ApolloProvider> */}
       </Provider>
     </ContractKitProvider>
   </StrictMode>,

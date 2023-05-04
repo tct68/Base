@@ -4,7 +4,7 @@ import React, { useCallback } from 'react'
 import { WrappedTokenInfo } from 'state/lists/hooks'
 import styled from 'styled-components'
 
-import { BaseTestNetworrk, Mainnet } from '../../networks'
+import { BaseTestNetwork, Mainnet } from '../../networks'
 import Modal from '../Modal'
 
 const ChainSelect = styled.div({
@@ -53,7 +53,7 @@ export const chains: Chain[] = [
   ...(process.env.NODE_ENV !== 'production'
     ? [
         {
-          network: BaseTestNetworrk,
+          network: BaseTestNetwork,
           token: new WrappedTokenInfo(
             {
               address: '0xF194afDf50B03e69Bd7D057c1Aa9e10c9954E4C9',

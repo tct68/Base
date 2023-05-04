@@ -9,10 +9,10 @@ export const Mainnet: Network = {
   chainId: ChainId.BaseMainnet,
 } as unknown as Network
 
-export const BaseTestNetworrk: Network = {
+export const BaseTestNetwork: Network = {
   name: NetworkNames.BaseTestnet,
-  rpcUrl: 'https://alfajores-forno.celo-testnet.org',
+  rpcUrl: BaseTestnet.rpcUrl,
   // graphQl: 'https://alfajores-blockscout.celo-testnet.org/graphiql',
-  explorer: 'https://alfajores-blockscout.celo-testnet.org',
+  explorer: BaseTestnet.explorer,
   chainId: ChainId.BaseTestnet,
 }

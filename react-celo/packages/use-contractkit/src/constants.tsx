@@ -124,9 +124,9 @@ export enum NetworkNames {
 
 export const BaseTestnet = {
   name: NetworkNames.BaseTestnet,
-  rpcUrl: 'https://alfajores-forno.celo-testnet.org',
+  rpcUrl: 'https://goerli.base.org',
   // graphQl: 'https://alfajores-blockscout.celo-testnet.org/graphiql',
-  explorer: 'https://alfajores-blockscout.celo-testnet.org',
+  explorer: 'https://goerli.basescan.org',
   chainId: ChainId.BaseTestnet,
 } as const;
 
